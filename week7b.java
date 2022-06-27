@@ -43,7 +43,7 @@ public class week7b {
                     break;
                 case 7:
                     for(int x : a){
-                        System.out.print(x);
+                        System.out.print(x+" ");
                     }
                     System.out.println("");
                     break;
