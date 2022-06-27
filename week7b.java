@@ -1,11 +1,17 @@
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.Collections;
 public class week7b {
     public static void main(String[] args) {
         ArrayList<Integer> a = new ArrayList<Integer>();
         Scanner sc = new Scanner(System.in);
+        Random r = new Random();
         int op,i,ele;
+        for(int j=0;j<=10;j++)
+        {
+            a.add(r.nextInt(10-0)+0);
+        }
         while(true){
             System.out.println("OPTIONS : 1.ADD 2.GET 3.REMOVE 4.SET 5.CLEAR 6.SIZE 7.PRINT LIST 8.SORT 9.EXIT");
             System.out.println("Enter your Choice");
