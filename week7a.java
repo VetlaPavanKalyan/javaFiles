@@ -6,10 +6,12 @@ public class week7a {
         int x1, x2;
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers : ");
+        System.out.println("Enter two Boundaries : ");
         x1=sc.nextInt();
         x2=sc.nextInt();
-        int r = rand.nextInt(x2-x1);
-        System.out.println("Random Number : "+r);
+        if(x1>0){
+            int r = rand.nextInt(x2-x1)+x1;
+            System.out.println("Random Number : "+r);
+        }
     }
 }
