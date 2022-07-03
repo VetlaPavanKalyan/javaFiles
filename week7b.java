@@ -28,8 +28,8 @@ public class week7b {
                     a.remove(sc.nextInt());
                 }
                 case 4 -> {
-                    System.out.println("Enter the element : ");
                     System.out.println("Enter Index : ");
+                    System.out.println("Enter the element : ");
                     a.set(sc.nextInt(), sc.nextInt());
                 }
                 case 5 -> {
