@@ -18,7 +18,6 @@ class Figure_3D {
     double r = 12.3;
     double h = 34.5;
     double l = 10.5;
-    double b = 15.7;
 
     void volume() {
         System.out.println("Volume of Figure is:");

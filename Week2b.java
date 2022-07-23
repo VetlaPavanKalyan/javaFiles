@@ -19,15 +19,11 @@ public class Week2b {
             years[i]=sc.nextInt();
         }
         System.out.println("Enter the Demand of the Items :");
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                System.out.println("Enter demand of the item in the year "+years[i]+" with the item id "+id[j]);
-                a[i][j]=sc.nextInt();
-            }
-        }
-        int k = 0;
+        int k = Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
+                System.out.println("Enter demand of the item in the year "+id[i]+" with the item id "+years[j]);
+                a[i][j]=sc.nextInt();
                 if(k<a[i][j]){
                     k=a[i][j];
                 }
@@ -36,7 +32,10 @@ public class Week2b {
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(k==a[i][j]){
-                    System.out.println("Most demanded Item with id "+id[i]+" is found in year "+years[j]+" with demand "+k);
+                    int t=id[i];
+                    int b=years[j];
+                    System.out.println("id = "+t+"year = "+b+"demand = "+k);
+                    break;
                 }
             }
         }
